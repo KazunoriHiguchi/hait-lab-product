@@ -35,7 +35,9 @@ lang_num=1
 lang = langs[lang_num]
 print("Will use lang '%s'" % (lang))
 
-#画像ファイルの場所・ファイル名を指定できるようにする
+input_name = input("ファイルの名前を入力してください。")
+
+#画像ファイルの場所を指定（一回目）
 input_file = input("ファイルのパスを入力してください。")
 
 #日本語で読み込み
@@ -49,10 +51,31 @@ txt = tool.image_to_string(
 txt = re.sub('([あ-んア-ン一-龥ー])\s+((?=[あ-んア-ン一-龥ー]))',
     r'\1\2', txt)
 
-print( txt )
+#複数枚写真を入力する（繰り返し）
 
-input_name = input("ファイルの名前を入力してください。")
+input_continue = input("続けて画像を読み込ませますか？　(y/n)")
 
-f = open('%s.txt.'%input_name, 'a')
-f.write('%s'%txt)
-f.close()
+while input_continue == "y" :
+        
+        #画像ファイルの場所・ファイル名を指定できるようにする
+        input_file = input("ファイルのパスを入力してください。")
+
+        #日本語で読み込み
+        txtex = tool.image_to_string(
+            Image.open(input_file),
+            lang="jpn",
+            builder=pyocr.builders.TextBuilder(tesseract_layout=3))
+
+        #正規表現操作
+
+        txtex = re.sub('([あ-んア-ン一-龥ー])\s+((?=[あ-んア-ン一-龥ー]))',
+            r'\1\2', txtex)
+        
+        txt = txt + txtex
+        
+        input_continue = input("続けて画像を読み込ませますか？　(y/n)")
+else :
+    f = open('%s.txt.'%input_name, 'a')
+    f.write('%s'%txt)
+    f.close()
+    
