@@ -50,3 +50,9 @@ txt = re.sub('([あ-んア-ン一-龥ー])\s+((?=[あ-んア-ン一-龥ー]))',
     r'\1\2', txt)
 
 print( txt )
+
+input_name = input("ファイルの名前を入力してください。")
+
+f = open('%s.txt.'%input_name, 'a')
+f.write('%s'%txt)
+f.close()
