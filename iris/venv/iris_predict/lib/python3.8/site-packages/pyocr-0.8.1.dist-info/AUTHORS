@@ -1,0 +1,253 @@
+$ git quick-stats detailedGitStats >| AUTHORS
+# some authors appears many times with different names. They have been
+# merged together
+# sorted by line inserted
+
+
+Contribution stats (by author):
+
+	 Jerome Flesch <jflesch@openpaper.work>:
+	  insertions:    12225 (65%)
+	  deletions:     2781 (29%)
+	  files:         597 (66%)
+	  commits:       2548 (69%)
+	  lines changed: 15006
+
+	 Thomas Perret <thomas.perret@gresille.org>:
+	  insertions:    4729 (25%)
+	  deletions:     6359 (60%)
+	  files:         142 (16%)
+	  commits:       23 (6%)
+	  lines changed: 11088
+	  first commit:  Thu Nov 8 16:28:21 2018 +0100
+	  last commit:   Thu Nov 29 11:04:42 2018 +0100
+
+	 Benjamin Nguyen-Van-Yen <queue@Keats.dehors.org>:
+	  insertions:    595 (3%)
+	  deletions:     600 (6%)
+	  files:         30 (3%)
+	  commits:       9 (2%)
+	  lines changed: 1195
+	  first commit:  Tue Nov 15 23:30:49 2016 +0100
+	  last commit:   Tue Nov 22 21:02:32 2016 +0100
+
+	 Samuel Hoffstaetter <samuel@hoffstaetter.com>:
+	  insertions:    310 (2%)
+	  deletions:     119 (1%)
+	  files:         25 (2%)
+	  commits:       15 (3%)
+	  lines changed: 425
+
+	 Elliott Sales de Andrade <quantum.analyst@gmail.com>:
+	  insertions:    177 (1%)
+	  deletions:     438 (4%)
+	  files:         23 (3%)
+	  commits:       8 (2%)
+	  lines changed: 615
+	  first commit:  Wed Aug 1 17:11:12 2018 -0400
+	  last commit:   Thu Aug 2 00:24:16 2018 -0400
+
+	 Marian Skrip <marian.skrip@devinsolutions.com>:
+	  insertions:    175 (1%)
+	  deletions:     11 (0%)
+	  files:         6 (1%)
+	  commits:       2 (1%)
+	  lines changed: 186
+	  first commit:  Wed Aug 30 14:45:38 2017 +0200
+	  last commit:   Wed Sep 13 09:34:13 2017 +0200
+
+	 aszlig <aszlig@redmoonstudios.org>:
+	  insertions:    101 (1%)
+	  deletions:     46 (0%)
+	  files:         5 (1%)
+	  commits:       1 (0%)
+	  lines changed: 147
+	  first commit:  Sun Apr 9 22:24:17 2017 +0200
+	  last commit:   Sun Apr 9 22:24:17 2017 +0200
+
+	 Paulo Miguel Almeida <paulo.ubuntu@gmail.com>:
+	  insertions:    70 (0%)
+	  deletions:     51 (0%)
+	  files:         6 (1%)
+	  commits:       6 (2%)
+	  lines changed: 121
+	  first commit:  Thu May 7 15:30:51 2015 -0300
+	  last commit:   Sun May 31 16:41:57 2015 -0300
+
+	 Adriano Pagano <adriano@sqooba.io>:
+	  insertions:    62 (0%)
+	  deletions:     21 (0%)
+	  files:         8 (1%)
+	  commits:       6 (2%)
+	  lines changed: 83
+	  first commit:  Wed Nov 15 15:35:56 2017 +0100
+	  last commit:   Thu Nov 30 16:27:59 2017 +0100
+
+	 Gian Luca Dalla Torre <gianluca@gestionaleauto.com>:
+	  insertions:    56 (0%)
+	  deletions:     1 (0%)
+	  files:         4 (0%)
+	  commits:       1 (0%)
+	  lines changed: 57
+	  first commit:  Mon Aug 4 10:22:03 2014 +0200
+	  last commit:   Mon Aug 4 10:22:03 2014 +0200
+
+	 David Martin <david_martin@fastmail.com>:
+	  insertions:    42 (0%)
+	  deletions:     25 (0%)
+	  files:         10 (1%)
+	  commits:       8 (2%)
+	  lines changed: 67
+	  first commit:  Sat May 13 20:17:38 2017 +1000
+	  last commit:   Wed Jun 13 21:04:33 2018 +1000
+
+	 Chanwoong Kim <devk0817@gmail.com>:
+	  insertions:    26 (0%)
+	  deletions:     1 (0%)
+	  files:         2 (0%)
+	  commits:       2 (1%)
+	  lines changed: 27
+	  first commit:  Sun Feb 14 19:32:38 2016 +0900
+	  last commit:   Sun Feb 14 20:19:56 2016 +0900
+
+	 ZoranPavlovic <zoran.pavlovic.eng@gmail.com>:
+	  insertions:    23 (0%)
+	  deletions:     32 (0%)
+	  files:         5 (1%)
+	  commits:       5 (1%)
+	  lines changed: 55
+	  first commit:  Tue Jan 2 14:14:13 2018 +0200
+	  last commit:   Tue Jan 2 20:34:42 2018 +0200
+
+	 Ashish Kulkarni <ashish@advarisk.com>:
+	  insertions:    16 (0%)
+	  deletions:     0 (0%)
+	  files:         2 (0%)
+	  commits:       2 (1%)
+	  lines changed: 16
+	  first commit:  Wed May 31 11:49:56 2017 +0530
+	  last commit:   Wed May 31 11:52:14 2017 +0530
+
+	 Ross Vandegrift <ross@kallisti.us>:
+	  insertions:    13 (0%)
+	  deletions:     1 (0%)
+	  files:         2 (0%)
+	  commits:       2 (1%)
+	  lines changed: 14
+	  first commit:  Sat Mar 22 21:56:45 2014 +0000
+	  last commit:   Sat Mar 22 21:48:16 2014 +0000
+
+	 jbochi <jbochi@gmail.com>:
+	  insertions:    10 (0%)
+	  deletions:     3 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 13
+	  first commit:  Wed Oct 27 21:09:50 2010 -0200
+	  last commit:   Wed Oct 27 21:09:50 2010 -0200
+
+	 Bernhard Liebl <Bernhard.Liebl@gmx.org>:
+	  insertions:    9 (0%)
+	  deletions:     21 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 30
+	  first commit:  Tue Aug 23 16:47:06 2016 +0200
+	  last commit:   Tue Aug 23 16:47:06 2016 +0200
+
+	 Fjup <Kuba-S@seznam.cz>:
+	  insertions:    8 (0%)
+	  deletions:     3 (0%)
+	  files:         2 (0%)
+	  commits:       2 (1%)
+	  lines changed: 11
+	  first commit:  Sat May 7 20:22:34 2016 +0200
+	  last commit:   Sat May 7 20:32:30 2016 +0200
+
+	 Jakub Semerák <Kalt@users.noreply.github.com>:
+	  insertions:    6 (0%)
+	  deletions:     0 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 6
+	  first commit:  Mon Aug 15 09:24:01 2016 +0200
+	  last commit:   Mon Aug 15 09:24:01 2016 +0200
+
+	 Marián Skrip <marian.skripp@gmail.com>:
+	  insertions:    5 (0%)
+	  deletions:     1 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 6
+	  first commit:  Tue Oct 23 16:13:49 2018 +0200
+	  last commit:   Tue Oct 23 16:13:49 2018 +0200
+
+	 Teis <TeisD@users.noreply.github.com>:
+	  insertions:    3 (0%)
+	  deletions:     2 (0%)
+	  files:         3 (0%)
+	  commits:       3 (1%)
+	  lines changed: 5
+	  first commit:  Mon May 2 12:37:53 2016 +0200
+	  last commit:   Mon May 2 14:48:40 2016 +0200
+
+	 Pedro-Juan Ferrer <vehrka@gmail.com>:
+	  insertions:    2 (0%)
+	  deletions:     1 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 3
+	  first commit:  Wed Apr 16 15:11:26 2014 +0200
+	  last commit:   Wed Apr 16 15:11:26 2014 +0200
+
+	 Bernard Cafarelli <bernard.cafarelli@gmail.com>:
+	  insertions:    1 (0%)
+	  deletions:     1 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 2
+	  first commit:  Mon May 18 13:51:00 2015 +0200
+	  last commit:   Mon May 18 13:51:00 2015 +0200
+
+	 Yada <ydt.hran2@gmail.com>:
+	  insertions:    1 (0%)
+	  deletions:     1 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 2
+	  first commit:  Sat Mar 19 22:52:34 2016 +0900
+	  last commit:   Sat Mar 19 22:52:34 2016 +0900
+
+	 Daniel Quinn <code@danielquinn.org>:
+	  insertions:    1 (0%)
+	  deletions:     1 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 2
+	  first commit:  Sat Apr 28 12:17:29 2018 +0100
+	  last commit:   Sat Apr 28 12:17:29 2018 +0100
+
+	 tom <tom@zeitgold.com>:
+	  insertions:    1 (0%)
+	  deletions:     1 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 2
+	  first commit:  Tue Sep 6 17:51:27 2016 +0200
+	  last commit:   Tue Sep 6 17:51:27 2016 +0200
+
+	 Jon Debonis <jon@trov.com>:
+	  insertions:    1 (0%)
+	  deletions:     0 (0%)
+	  files:         1 (0%)
+	  commits:       1 (0%)
+	  lines changed: 1
+	  first commit:  Thu Sep 25 15:34:21 2014 -0700
+	  last commit:   Thu Sep 25 15:34:21 2014 -0700
+
+	total:
+	  insertions:    18843 (100%)
+	  deletions:     10636 (100%)
+	  files:         904 (100%)
+	  commits:       374 (100%)
+
