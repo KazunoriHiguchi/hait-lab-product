@@ -10,7 +10,12 @@
 
 <body>
   <form method="post" action="./" enctype="multipart/form-data" >
+    <input type="text" id="name" name="name" value="ファイルに名前を付けて下さい" required size="30">
+    <br>
+    <br>
     <input type="file" id="img_file" name="img_file">
+    <br>
+    <br>
     <input type="submit" value="送信する">
   </form>
   <p>プレビュー</p>
@@ -24,6 +29,16 @@
   </form>
   
 
-  <script src="app.js"></script>
+  <script src="main.js">
+    function previewFile(hoge){
+      var fileData = new FileReader();
+      fileData.onload = (function() {
+        //id属性が付与されているimgタグのsrc属性に、fileReaderで取得した値の結果を入力することで
+        //プレビュー表示している
+        document.getElementById('preview').src = fileData.result;
+      });
+      fileData.readAsDataURL(hoge.files[0]);
+    }
+  </script>
 </body>
 </html>
