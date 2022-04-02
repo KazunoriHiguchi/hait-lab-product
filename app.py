@@ -117,7 +117,7 @@ else :
     #辞書作成
     dic = {title_list[i]: contents_list[i] for i in range(len(contents_list))}
    
-#検索
+#検索　
 word = input("調べたい語句を入力してください")
  
 for key, value in dic.items():
