@@ -79,3 +79,47 @@ else :
     f.write('%s'%txt)
     f.close()
     
+
+#検索部分    
+import os
+
+#拡張子なしのファイル名 os.path.splitext()
+#拡張子ありのファイル名 os.path.basename()
+
+input_dic = input("検索を開始しますか？(y/n)")
+
+#タイトルをリスト化
+title_list = list()
+#ファイルの内容（文章）をリスト化
+contents_list = list()
+
+while input_dic == "y" :
+    
+    input_readfile = input("ファイルのパスを入力してください")
+    
+    #ファイルの内容読み込み
+    
+    readfile = open(r'%s'%input_readfile, 'r')
+    data = readfile.read()
+    readfile.close()
+    
+    #拡張子ありのファイル名取得
+    title = os.path.basename(r'%s.txt'%input_readfile)
+    #タイトルのリストの末尾に新しい要素を追加
+    title_list.append(title)
+    #ファイルの内容（文章）のリストの末尾に新しい要素を追加
+    contents_list.append(data)
+    
+    input_dic = input("続けてファイルを読み込みますか？(y/n)")
+    
+    
+else :
+    #辞書作成
+    dic = {title_list[i]: contents_list[i] for i in range(len(contents_list))}
+   
+#検索　
+word = input("調べたい語句を入力してください")
+ 
+for key, value in dic.items():
+    if word in value:
+        print (key)
