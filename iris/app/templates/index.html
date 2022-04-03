@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webapp</title>
+  <link rel="stylesheet" href="main.css">
+  <style>.picture{width:300px;
+                  height:300px;
+                  }
+  </style>
+</head>
+
+<body>
+  <h1>画像内の言葉を検索できるアプリ</h1>
+  <form method="post" action="./" enctype="multipart/form-data" >
+    <input type="text" id="name" name="name" placeholder="ファイルに名前をつけてください" required size="30">
+    <br>
+    <br>
+    <input type="file" id="img_file" name="img_file" onchange="previewFile(this);">
+    <br>
+    <br>
+    <input type="submit" value="送信する">
+  </form>
+  <p>プレビュー</p>
+  <img id="preview" class="picture">
+
+  <form method="post" action="./test">
+    <p>検索したいキーワードを入力してください。</p>
+    <input type="search" id="search" name="search" placeholder="キーワードを入力">
+    <input type="submit" name="submit" value="検索">
+  </form>
+
+  <h3>結果<br>{{ answer }}</h3>
+
+  <script>
+    function previewFile(hoge){
+      var fileData = new FileReader();
+      fileData.onload = (function() {
+        //id属性が付与されているimgタグのsrc属性に、fileReaderで取得した値の結果を入力することで
+        //プレビュー表示している
+        document.getElementById('preview').src = fileData.result;
+      });
+      fileData.readAsDataURL(hoge.files[0]);
+    }
+  </script>
+</body>
+</html>

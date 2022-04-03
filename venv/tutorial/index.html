@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webapp</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+  <h1>画像から目次を読み取るアプリ</h1>
+
+  <!-- ファイルを読み込む -->
+  <form action="test.html" method="post" enctype="multipart/form-data" >
+    <input type="text" id="name" name="name" value="ファイルに名前を付けて下さい" required size="30">
+    <br>
+    <br>
+    <input type="file" name="test" onchange="previewFile(this);">
+    <br>
+    <br>
+    <input type="submit" value="送信する">
+  </form>
+  <p>プレビュー</p>
+  <img id="preview">
+
+
+
+  <!-- 検索ボックス -->
+  <form action="cgi-bin/example.cgi" method="post">
+    <p>検索したいキーワードを入力してください。</p>
+    <input type="search" name="search" placeholder="キーワードを入力">
+    <input type="submit" name="submit" value="検索">
+  </form>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
