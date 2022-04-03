@@ -17,7 +17,7 @@ count = 0
 
 app = Flask(__name__)
 
-app.secret_key = 'user'
+# app.secret_key = 'user'
 # app.permanent_session_lifetime = timedelta(
 #    minutes=5)  # -> 5分 #(days=5) -> 5日保存
 
@@ -31,17 +31,18 @@ def predicts():
     
     # 最初にURLを開く際には、画像ファイルが選択されてないので文字認識の動作を飛ばす
     if count != 0:
-        print(request.form.get("img_file"))
         # まず入力された画像ファイルをカレントディレクトリに保存する
         # 保存時のファイル名は、入力されたファイルの名称が引き継がれるようにしたいが、やり方がわからない
+        print(request.form.getlist('name')[0])
         print(request.files['img_file'])
         file = request.files['img_file']
-        file.save('img_file')
+        filename = request.form.getlist('name')[0]
+        file.save(filename)
 
 		# 保存した画像ファイルから文字を読み取り、ターミナルに出力する
         tools = pyocr.get_available_tools()
         tool = tools[0]
-        filename = 'img_file'
+        # filename = 'img_file'
         txt = tool.image_to_string(
             Image.open(filename),
             lang='jpn',
@@ -50,14 +51,15 @@ def predicts():
         txt = txt.replace(' ', '')
         txt = txt.replace('\n\n', '\n')
         # ターミナルに文字認識の結果を出力
-        print(txt)
+        print('txt', txt)
         # このあと、それぞれの行をdicに格納していくコードを書く
-        session.permanent = True
-        session['img_file'] = txt
+        # session.permanent = True
+        # session[filename] = txt
+        dic[filename] = txt
 
     count += 1
     
-    return render_template('index.html')
+    return render_template('index.html', answer="")
 
     # if request.method == 'POST':
     #     return render_template('index.html')
@@ -68,8 +70,23 @@ def predicts():
 
 @app.route('/test', methods=['GET', 'POST'])
 def test():
-    print(session['img_file'])
-    return render_template('index.html')
+    # print(session['img_file'])
+    print(request.form.getlist('search')[0])
+    target = request.form.getlist('search')[0]
+    answer = 'Not Found'
+    # for key, value in session.items():
+    #     print(key, value)
+    #     if target in value:
+    #         print(key)
+    #         #　answer = key
+            
+    for key, value in dic.items():
+        # print(key, value)
+        if target in value:
+            print('key', key)
+            answer = key
+
+    return render_template('index.html', answer=answer)
     
 
 # main関数
