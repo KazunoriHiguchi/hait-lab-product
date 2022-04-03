@@ -9,3 +9,6 @@ function previewFile(hoge){
   });
   fileData.readAsDataURL(hoge.files[0]);
 }
+
+
+
